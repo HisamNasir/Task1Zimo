@@ -1,5 +1,7 @@
-import Link from 'next/link';
-
+const React = require('react');
+const Link = require('next/link').default;
+import '../Pages/about.js'
+import '../Pages/home.js'
 const Navbar = () => {
   return (
     <nav className="bg-gray-800 p-4">
@@ -9,17 +11,12 @@ const Navbar = () => {
           <ul className="flex space-x-4">
             <li>
               <Link href="/">
-                <h1 className="text-white hover:text-gray-300">Home</h1>
+                <p className="text-white hover:text-gray-300">Home</p>
               </Link>
             </li>
             <li>
               <Link href="/about">
-                <h1 className="text-white hover:text-gray-300">About</h1>
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact">
-                <h1 className="text-white hover:text-gray-300">Contact</h1>
+                <p className="text-white hover:text-gray-300">About</p>
               </Link>
             </li>
           </ul>
@@ -29,4 +26,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+module.exports = Navbar;
