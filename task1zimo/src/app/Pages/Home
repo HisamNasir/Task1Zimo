@@ -1,0 +1,8 @@
+import PageLayout from '../pages';
+// Additional imports and content for the specific page
+
+const HomePage = () => {
+  // Page-specific content
+};
+
+export default HomePage;
