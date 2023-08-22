@@ -3,8 +3,6 @@ import Image from "next/image";
 const IntroPage = () => {
   return (
     <div id="Page" className="">
-      {/* Section 1 */}
-
       <div id="Section1" className="relative">
         <div className="flex items-center h-screen ">
           <div className=" z-0">
@@ -55,11 +53,11 @@ const IntroPage = () => {
               </svg>
             </div>
           </div>
-          <div className="mx-10 z-10">
+          <div className="m-10 z-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="603.111"
-              height="54.474"
+              width="100%"
+              height="100%"
               viewBox="0 0 603.111 54.474"
             >
               <g
@@ -138,8 +136,8 @@ const IntroPage = () => {
             <i className="absolute bottom-0 transform -translate-x-1/2 left-1/2 animate-bounce">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="82.828"
-                height="42.414"
+                width="20%"
+                height="20%"
                 viewBox="0 0 82.828 42.414"
               >
                 <path
@@ -158,12 +156,6 @@ const IntroPage = () => {
           </div>
         </div>
       </div>
-
-
-
-
-
-
     </div>
   );
 };
