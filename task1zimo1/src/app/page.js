@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import IntroPage from './Pages/IntroPage.js'
+// import se
 import Head from 'next/head.js'
 // import styles from '..app/global.css'
 export default function Home() {
