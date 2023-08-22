@@ -1463,8 +1463,8 @@ const IntroPage = () => {
               </svg>
             </div>
           </div>
-          <div className="flex items-center h-full md:grid md:grid-cols-2 z-10">
-          <div className="h-full">
+          <div className=" h-5/6 md:grid md:grid-cols-2 z-10">
+          <div className="h-full flex items-center">
             <div className="flex items-center">
             <div className="mx-10 z-10">
             <svg
@@ -1545,12 +1545,9 @@ const IntroPage = () => {
             </svg>
           </div>
             </div>
-            <p className="flex items-end -bottom-64 pb-20 text-sm">ZIMO is a wholly owned subsidiary company of ZIMO GROUP LIMITED<br/>The registered office is: 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, England, United Kingdom.</p>
         </div>
-        
-        
-
           </div>
+            <p className="flex items-end -bottom-64 pb-20 text-sm">ZIMO is a wholly owned subsidiary company of ZIMO GROUP LIMITED<br/>The registered office is: 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, England, United Kingdom.</p>
           <div >
 
           </div>
