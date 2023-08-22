@@ -1,11 +1,11 @@
 import React from 'react'
 
-const section14 = () => {
+const Section14 = () => {
   return (
     <div>
-    {/* Section 17 */}
+   
 
-    <div id="section17" className="relative ">
+    <div id="section" className="relative ">
       <div
         id="logo"
         className="absolute inset-0 flex justify-center items-center opacity-25 blur-md"

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const section20 = () => {
+const Section20 = () => {
   return (
-    <div>section20</div>
+    <div>Section20</div>
   )
 }
 
-export default section20
+export default Section20
