@@ -9,9 +9,9 @@ const Section2 = () => {
       >
         <div className=" ">
           <div className=" ">
-            <p className=" justify-center m-5">REVOLUTIONARY</p>
-            <div className="grid grid-rows-3 lg:grid-cols-3 gap-2">
-              <div id="logo" className=" flex justify-center">
+            <p className="  m-5">REVOLUTIONARY</p>
+            <div className="grid max-lg:grid-rows-3 lg:grid-cols-3 gap-2">
+              <div id="logo" className=" flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="369.792"
@@ -76,11 +76,11 @@ const Section2 = () => {
                   </g>
                 </svg>
               </div>
-              <div className="flex justify-center align-middle">
+              <div className="flex justify-center items-center align-middle">
                 <hr className="w-48 lg:w-1 h-1 lg:h-48 mx-4 lg:my-4 bg-[#BE9F56] border-0 mx-10 md:my-10" />
               </div>
 
-              <div id="logo2" className=" flex justify-center">
+              <div id="logo2" className=" flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="400.848"
