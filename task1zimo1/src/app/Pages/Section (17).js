@@ -1,15 +1,75 @@
+'use client'
 import React from "react";
+import Image from "next/image";
+// import { useState, useEffect, useRef } from "react";
+// import '../global.css'
+import PhoneG1 from "../Assets/IPhone 14 (14).png";
+import PhoneG2 from "../Assets/IPhone 14 (19).png";
+import Phone2G1 from "../Assets/Pixel 7 Pro Mockup.png";
+import Phone2G2 from "../Assets/Pixel 7 Pro Mockup-7.png";
+// import FadeInSection from "../Assets/FadeInSection.jsx";
+
+import { useEffect, useState } from 'react';
+
+const FadeInSection2 = ({ children }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const element = document.getElementById('fade-in-section');
+      const elementOffset = element.offsetTop;
+      const windowHeight = window.innerHeight;
+      const elementHeight = element.clientHeight;
+
+      const isElementVisible =
+        scrollTop + windowHeight > elementOffset &&
+        scrollTop < elementOffset + elementHeight;
+
+      setIsVisible(isElementVisible);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div
+      id="fade-in-section"
+      className={`transition-opacity duration-1000 ${
+        isVisible ? 'opacity-0' : 'opacity-100'
+      }`}
+    >
+      {children}
+    </div>
+  );
+};
+
 
 const Section16 = () => {
+  
   return (
     <div>
       <div
         id="Section19"
-        className="flex  justify-center items-center  h-screen"
+        className="flex  justify-center items-center  min-h-screen"
       >
-        <div className="flex justify-center">
-          <div className="grid grid-row-3">
+        
+        <div className=" h-full">
+          <div className="grid grid-row-5 h-full">
+            
+             <div className="lg:hidden h-80 m-10">
+                  <div className="flex justify-center -translate-x-20 h-80 relative z-30">
+                      <Image className="30 w-40 max-h-80 absolute z-40" src={PhoneG1} alt=""></Image>
+                      <Image className="20 w-40 translate-x-32 max-h-80 absolute z-30" src={PhoneG2} alt=""></Image>
+                  </div>
+              </div>  
+
+   
             <div className="flex justify-center m-10">
+              
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100"
@@ -401,16 +461,58 @@ const Section16 = () => {
             <p className="flex justify-center text-[#BE9F56] ">
               Get the ZIMO app on a phone or tablet
             </p>
+
+
+
             <p className="flex justify-center opacity-50 text-center">
               To install ZIMO, follow the link for your device from your
               smartphone or tablet.
             </p>
-            <p className="flex justify-center items-end opacity-50 mt-40 text-center">
+
+
+            <div>
+              
+            <div className="lg:hidden h-80 m-10">
+                  <div className="flex justify-center -translate-x-20 h-80 relative z-30">
+                      <Image className="30 w-40 max-h-80 absolute z-40" src={Phone2G1} alt=""></Image>
+                      <Image className="h-80 w-80 translate-x-32 max-h-80 absolute z-30" src={Phone2G2} alt=""></Image>
+                  </div>
+              </div>  
+
+            </div>
+
+
+
+          </div>
+          
+          <p className="flex justify-center opacity-50  text-center">
               ZIMO is available on many devices. The ZIMO app may come
               pre-installed or you may need to download and install it.
-            </p>
-          </div>
+            </p>        
+          <div className="mt-10 flex justify-center items-end">
+          <i className="flex justify-center  bottom-0 transform -translate-x-1/2 left-1/2 animate-bounce">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20%"
+              height="20%"
+              viewBox="0 0 82.828 42.414"
+            >
+              <path
+                id="Path_59"
+                data-name="Path 59"
+                d="M74.805,456.151l40-40-40-40"
+                transform="translate(457.565 -73.391) rotate(90)"
+                fill="none"
+                stroke="#000"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+              />
+            </svg>
+          </i>
         </div>
+        </div>
+
       </div>
     </div>
   );

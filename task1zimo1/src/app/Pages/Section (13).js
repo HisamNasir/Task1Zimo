@@ -1,14 +1,59 @@
+'use client' 
 import React from "react";
+
+
+import { useEffect, useState } from 'react';
+
+const FadeInSection2 = ({ children }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const element = document.getElementById('fade-in-section');
+      const elementOffset = element.offsetTop;
+      const windowHeight = window.innerHeight;
+      const elementHeight = element.clientHeight;
+
+      const isElementVisible =
+        scrollTop + windowHeight > elementOffset &&
+        scrollTop < elementOffset + elementHeight;
+
+      setIsVisible(isElementVisible);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div
+      id="fade-in-section"
+      className={`transition-opacity duration-1000 ${
+        isVisible ? 'opacity-0' : 'opacity-100'
+      }`}
+    >
+      {children}
+    </div>
+  );
+};
+
 
 const Section12 = () => {
   return (
-    <div>
-      <div id="Section15" className="grid grid-flow-row h-screen">
-        <div className="flex items-end  justify-center  ">
+    <div className=" h-screen">
+      <div id="Section15" className=" grid grid-flow-row h-full">
+      <div className="flex justify-center row-span-3">
+.
+      </div>
+      <div className="flex items-center row-span-8 justify-center">
+                <div className="flex  justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="268.267"
-            height="102"
+            width="70%"
+            height="70%"
             viewBox="0 0 268.267 102"
           >
             <g
@@ -83,15 +128,43 @@ const Section12 = () => {
           </svg>
         </div>
 
-        <div className="flex items-end  justify-center text-center">
+
+      </div>
+      <div className="flex text-3xl row-span-2 justify-center items-center text-center">
           Document-signing software technology that lets you sign documents
           online.
         </div>
 
-        {/* Signature Area  */}
+<div className="row-span-1 h-full">
+  <div className="grid  lg:grid-cols-3 h-full">
+  <div></div>
+
+<div className=" flex w-full justify-center items-end animate-bounce">
+          <i  className="flex justify-center items-end">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20%"
+              height="20%"
+              viewBox="0 0 82.828 42.414"
+            >
+              <path
+                id="Path_59"
+                data-name="Path 59"
+                d="M74.805,456.151l40-40-40-40"
+                transform="translate(457.565 -73.391) rotate(90)"
+                fill="none"
+                stroke="#000"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+              />
+            </svg>
+          </i>
+        </div>
+              {/* Signature Area  */}
         <div
           id="Signature_area"
-          className="flex items-end justify-center lg:justify-end mb-10 mr-10"
+          className="relative flex items-end justify-center lg:justify-end mb-5 mr-5"
         >
           <div>
             <div className="flex items-end justify-end ">
@@ -217,9 +290,24 @@ const Section12 = () => {
                 ZD:SID 46791269900490374129
               </a>
             </div>
-          </div>
+
         </div>
+        </div>
+
+  </div>
+
+
+
+
+
+</div>
+
+
       </div>
+
+
+
+
     </div>
   );
 };

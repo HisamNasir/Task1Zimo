@@ -1,11 +1,58 @@
-import React from "react";
+
+'use client';
 import Image from "next/image";
+import { useClient } from "next/client";
+// import "../global.css"
+import { motion, iseInView, useAnimation } from "framer-motion";
+
+
+import { useEffect, useState } from 'react';
+
+const FadeInSection = ({ children }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const element = document.getElementById('fade-in-section');
+      const windowHeight = window.innerHeight;
+      const elementHeight = element.clientHeight;
+      const elementOffset = element.offsetTop;
+
+      const visiblePercentage = (windowHeight - Math.max(0, elementOffset - scrollTop)) / elementHeight;
+
+      if (visiblePercentage >= 0.8) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div
+      id="fade-in-section"
+      className={`transition-opacity duration-1000 ${
+        isVisible ? 'opacity-100' : 'opacity-0'
+      }`}
+    >
+      {children}
+    </div>
+  );
+};
+
+
 const IntroPage = () => {
   return (
     <div id="Page" className="">
       <div id="Section1" className="relative">
         <div className="flex items-center h-screen ">
-          <div className=" z-0">
+          <FadeInSection  className=" z-0">
             <div
               id="logo"
               className="absolute inset-0 flex justify-center items-center opacity-25 blur-md"
@@ -51,9 +98,12 @@ const IntroPage = () => {
                   />
                 </g>
               </svg>
-            </div>
-          </div>
-          <div className="m-10 z-10">
+            </div >
+          </FadeInSection >
+
+            <FadeInSection>
+
+          <div className=" m-10 z-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="100%"
@@ -131,7 +181,7 @@ const IntroPage = () => {
               </g>
             </svg>
           </div>
-
+            </FadeInSection>
           <div className=" h-screen flex justify-center items-end">
             <i className="absolute bottom-0 transform -translate-x-1/2 left-1/2 animate-bounce">
               <svg

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Section2 = () => {
   return (
     <div>
@@ -7,8 +8,8 @@ const Section2 = () => {
         id="Section3"
         className=" flex justify-center items-center text-black text-center tracking-widest h-screen "
       >
-        <div className=" ">
-          <div className=" ">
+        
+          <div>
             <p className="  m-5">REVOLUTIONARY</p>
             <div className="grid max-lg:grid-rows-3 lg:grid-cols-3 gap-2">
               <div id="logo" className=" flex items-center justify-center">
@@ -189,7 +190,6 @@ const Section2 = () => {
               </p>
             </div>
           </div>
-        </div>
       </div>
     </div>
   );

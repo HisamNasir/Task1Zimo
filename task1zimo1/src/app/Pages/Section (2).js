@@ -1,4 +1,44 @@
 import React from "react";
+import { useEffect, useState } from 'react';
+
+
+const FadeInSection = ({ children }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const element = document.getElementById('fade-in-section');
+      const windowHeight = window.innerHeight;
+      const elementHeight = element.clientHeight;
+      const elementOffset = element.offsetTop;
+
+      const visiblePercentage = (windowHeight - Math.max(0, elementOffset - scrollTop)) / elementHeight;
+
+      if (visiblePercentage >= 0.8) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div
+      id="fade-in-section"
+      className={`transition-opacity duration-1000 ${
+        isVisible ? 'opacity-100' : 'opacity-0'
+      }`}
+    >
+      {children}
+    </div>
+  );
+};
 
 const Section1 = () => {
   return (
@@ -43,7 +83,7 @@ const Section1 = () => {
                   transform="translate(22.925 0)"
                   fill="#fff"
                 />
-                <path
+                <path 
                   id="Path_4"
                   data-name="Path 4"
                   d="M173.9,125.631v1.141a17.663,17.663,0,0,0,1.185,5.39c1.308,3.145,3.515,6.1,5.387,9.227,3.476,5.8,7.386,12.5,10.883,18.35,2.879,4.813,5.564,11,12.713,11.093,7.434.1,9.908-6.218,12.606-10.782,8.567-14.489,26.074-43.645,26.074-43.645h-8.081s-16.7,28.441-25,42.816c-1.06,1.838-3.163,4.25-5.6,4.25-3.7,0-5.555-4.24-7.218-7.154-4.456-7.8-8.749-15.27-12.929-22.808-1.314-2.371-3.982-5.49-2.155-8.708,1.191-2.1,3.594-1.971,7-1.971,0-.053,32.968,0,32.968,0v-6.426H191.789s-7.052-.207-9.913.31C177.147,117.571,174.576,121.1,173.9,125.631Z"
@@ -54,10 +94,10 @@ const Section1 = () => {
             </svg>
           </div>
           <div className="flex justify-center w-full text-2xl font-light">
-            <div>
+            <FadeInSection>
               <p className=" text-sm">We are the global platform.</p>
               <p className=" text-sm">Services in over one hundred and twenty countries.</p>
-            </div>
+            </FadeInSection>
           </div>
         </div>
         </div>

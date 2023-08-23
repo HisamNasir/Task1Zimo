@@ -1,4 +1,6 @@
+'use client'
 import Image from "next/image";
+import { useClient } from "react";
 import IntroPage from "./Pages/IntroPage.js";
 import Section1 from "./Pages/Section (2).js";
 import Section2 from "./Pages/Section (3).js";

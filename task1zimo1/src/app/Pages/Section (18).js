@@ -1,11 +1,49 @@
 import React from "react";
 
+import { useEffect, useState } from 'react';
+
+const FadeInSection2 = ({ children }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const element = document.getElementById('fade-in-section');
+      const elementOffset = element.offsetTop;
+      const windowHeight = window.innerHeight;
+      const elementHeight = element.clientHeight;
+
+      const isElementVisible =
+        scrollTop + windowHeight > elementOffset &&
+        scrollTop < elementOffset + elementHeight;
+
+      setIsVisible(isElementVisible);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div
+      id="fade-in-section"
+      className={`transition-opacity duration-1000 ${
+        isVisible ? 'opacity-0' : 'opacity-100'
+      }`}
+    >
+      {children}
+    </div>
+  );
+};
+
 const Section17 = () => {
   return (
     <div>
       <div
         id="Section20"
-        className="h-screen relative flex items-center justify-center bg-black text-white"
+        className="h-screen text-2xl relative flex items-center justify-center bg-black text-white"
       >
         <div className="  z-0">
           <div
@@ -56,9 +94,10 @@ const Section17 = () => {
           </div>
         </div>
 
-        <div>
+        <div className="relative">
           <h1>INTERESTED IN WORKING WITH US? </h1>
           <h1 className="flex justify-center mt-40 cursor-pointer">Email </h1>
+
         </div>
       </div>
     </div>
