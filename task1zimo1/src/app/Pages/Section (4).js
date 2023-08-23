@@ -2,42 +2,6 @@ import React from "react";
 
 import { useEffect, useState } from 'react';
 
-const FadeInSection4 = ({ children }) => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const element = document.getElementById('fade-in-section');
-      const elementOffset = element.offsetTop;
-      const windowHeight = window.innerHeight;
-      const elementHeight = element.clientHeight;
-
-      const isElementVisible =
-        scrollTop + windowHeight > elementOffset &&
-        scrollTop < elementOffset + elementHeight;
-
-      setIsVisible(isElementVisible);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return (
-    <div
-      id="fade-in-section"
-      className={`transition-opacity duration-1000 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
-    >
-      {children}
-    </div>
-  );
-};
-
 
 const Section3 = () => {
   return (
@@ -127,8 +91,8 @@ const Section3 = () => {
               </svg>
             </div>
           </div>
-          <FadeInSection4 className=" w-full h-full ">
-            <div className="m-20 grid grid-cols-6 grid-cols-6 z-10 text-white text-center ">
+          <div className=" w-full h-full ">
+            <div className="m-20 grid  grid-cols-6 z-10 text-white text-center ">
               <div className="py-14">FINANCE</div>
               <div className=" pl-20"></div>
               <div className="flex justify-center  py-14">LEGAL</div>
@@ -167,7 +131,7 @@ const Section3 = () => {
               <div className="flex justify-center py-14">DIAMONDS</div>
               <div className="flex justify-center py-14"></div>
             </div>
-          </FadeInSection4>
+          </div>
         </div>
       </div>
     </div>

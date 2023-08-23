@@ -6,42 +6,8 @@ import Brand3 from "../Assets/brands3.png"
 import Brand4 from "../Assets/brands4.png"
 
 import { useEffect, useState } from 'react';
+import PopUp from "../Assets/PopUp";
 
-const FadeInSection2 = ({ children }) => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const element = document.getElementById('fade-in-section');
-      const elementOffset = element.offsetTop;
-      const windowHeight = window.innerHeight;
-      const elementHeight = element.clientHeight;
-
-      const isElementVisible =
-        scrollTop + windowHeight > elementOffset &&
-        scrollTop < elementOffset + elementHeight;
-
-      setIsVisible(isElementVisible);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return (
-    <div
-      id="fade-in-section"
-      className={`transition-opacity duration-1000 ${
-        isVisible ? 'opacity-0' : 'opacity-100'
-      }`}
-    >
-      {children}
-    </div>
-  );
-};
 
 
 const Section5 = () => {
@@ -75,17 +41,20 @@ const Section5 = () => {
           </i>
         </div>
       </div>
+      
       <div className="absolute h-full w-full flex justify-end items-end">
-        <div className=" bg-gray-200 h-48 w-72 m-5 rounded-lg opacity-50">
-          <div className="grid grid-rows-3 gap-5 m-5">
+       <div className=" bg-gray-200 h-48 w-72 m-5 rounded-lg opacity-50">
+          <PopUp> <div className="grid grid-rows-3 gap-5 m-5">
               <Image src={Brand1} alt=""></Image>
               <Image src={Brand2} alt=""></Image>
               <Image src={Brand3} alt=""></Image>
               <Image src={Brand4} alt=""></Image>
           </div>
-
+</PopUp>
         </div>
       </div>
+      
+
     </div>
   );
 };

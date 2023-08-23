@@ -1,44 +1,7 @@
+'use client';
 import React from "react";
 import { useEffect, useState } from 'react';
-
-
-const FadeInSection = ({ children }) => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const element = document.getElementById('fade-in-section');
-      const windowHeight = window.innerHeight;
-      const elementHeight = element.clientHeight;
-      const elementOffset = element.offsetTop;
-
-      const visiblePercentage = (windowHeight - Math.max(0, elementOffset - scrollTop)) / elementHeight;
-
-      if (visiblePercentage >= 0.8) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return (
-    <div
-      id="fade-in-section"
-      className={`transition-opacity duration-1000 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
-    >
-      {children}
-    </div>
-  );
-};
+import FadeInOutComponent from "../Assets/FadeInOutComponent";
 
 const Section1 = () => {
   return (
@@ -50,7 +13,8 @@ const Section1 = () => {
       >
         <div className="flex items-center max-lg:justify-center h-screen">
         <div className="block lg:flex w-4/5 lg:items-center ">
-        <div className="flex justify-center m-10" id="logo">
+          <FadeInOutComponent>
+                      <div className="flex justify-center m-10" id="logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="70%"
@@ -93,11 +57,13 @@ const Section1 = () => {
               </g>
             </svg>
           </div>
+          </FadeInOutComponent>
+
           <div className="flex justify-center w-full text-2xl font-light">
-            <FadeInSection>
+            <FadeInOutComponent>
               <p className=" text-sm">We are the global platform.</p>
               <p className=" text-sm">Services in over one hundred and twenty countries.</p>
-            </FadeInSection>
+            </FadeInOutComponent>
           </div>
         </div>
         </div>

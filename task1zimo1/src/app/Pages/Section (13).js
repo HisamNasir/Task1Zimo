@@ -1,44 +1,9 @@
 'use client' 
 import React from "react";
-
-
+import PopUp from "../Assets/PopUp";
+import FadeInOutComponent from "../Assets/FadeInOutComponent";
 import { useEffect, useState } from 'react';
 
-const FadeInSection2 = ({ children }) => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const element = document.getElementById('fade-in-section');
-      const elementOffset = element.offsetTop;
-      const windowHeight = window.innerHeight;
-      const elementHeight = element.clientHeight;
-
-      const isElementVisible =
-        scrollTop + windowHeight > elementOffset &&
-        scrollTop < elementOffset + elementHeight;
-
-      setIsVisible(isElementVisible);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return (
-    <div
-      id="fade-in-section"
-      className={`transition-opacity duration-1000 ${
-        isVisible ? 'opacity-0' : 'opacity-100'
-      }`}
-    >
-      {children}
-    </div>
-  );
-};
 
 
 const Section12 = () => {
@@ -48,7 +13,8 @@ const Section12 = () => {
       <div className="flex justify-center row-span-3">
 .
       </div>
-      <div className="flex items-center row-span-8 justify-center">
+      <FadeInOutComponent>
+        <div className="flex items-center row-span-8 justify-center">
                 <div className="flex  justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -130,11 +96,13 @@ const Section12 = () => {
 
 
       </div>
+      </FadeInOutComponent>
+      <FadeInOutComponent>
       <div className="flex text-3xl row-span-2 justify-center items-center text-center">
           Document-signing software technology that lets you sign documents
           online.
         </div>
-
+        </FadeInOutComponent>
 <div className="row-span-1 h-full">
   <div className="grid  lg:grid-cols-3 h-full">
   <div></div>
@@ -167,7 +135,7 @@ const Section12 = () => {
           className="relative flex items-end justify-center lg:justify-end mb-5 mr-5"
         >
           <div>
-            <div className="flex items-end justify-end ">
+            <div className=" hover:opacity-0 flex items-end justify-end ">
               <div className="flex gap-x-5">
                 <div className="">
                   <svg
@@ -286,7 +254,7 @@ const Section12 = () => {
               <div className="flex justify-end">
                 <hr className="w-80  h-0.5  bg-[#999999] opacity-50 border-0 rounded " />
               </div>
-              <a className="flex justify-end text-xs ">
+              <a  className="flex justify-end text-xs ">
                 ZD:SID 46791269900490374129
               </a>
             </div>

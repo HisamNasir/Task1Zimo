@@ -1,6 +1,8 @@
+'use client';
 import React from "react";
-
-
+import { useEffect, useState } from 'react';
+import FadeInOutComponent from "../Assets/FadeInOutComponent";
+import PopUp from "../Assets/PopUp";
 const Section2 = () => {
   return (
     <div>
@@ -13,7 +15,8 @@ const Section2 = () => {
             <p className="  m-5">REVOLUTIONARY</p>
             <div className="grid max-lg:grid-rows-3 lg:grid-cols-3 gap-2">
               <div id="logo" className=" flex items-center justify-center">
-                <svg
+                <PopUp>
+                                  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="369.792"
                   height="80"
@@ -76,13 +79,17 @@ const Section2 = () => {
                     </g>
                   </g>
                 </svg>
+                </PopUp>
+
               </div>
               <div className="flex justify-center items-center align-middle">
-                <hr className="w-48 lg:w-1 h-1 lg:h-48 mx-4 lg:my-4 bg-[#BE9F56] border-0 mx-10 md:my-10" />
+                <FadeInOutComponent><hr className="w-48 lg:w-1 h-1 lg:h-48 mx-4 lg:my-4 bg-[#BE9F56] border-0 mx-10 md:my-10" /></FadeInOutComponent>
+                
               </div>
 
               <div id="logo2" className=" flex items-center justify-center">
-                <svg
+                <PopUp>
+                                  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="400.848"
                   height="80"
@@ -182,13 +189,15 @@ const Section2 = () => {
                     </g>
                   </g>
                 </svg>
+                </PopUp>
+
               </div>
             </div>
-            <div>
+            <FadeInOutComponent>
               <p className=" text-xl m-5">
                 The only platform of it's kind in the world.
               </p>
-            </div>
+            </FadeInOutComponent>
           </div>
       </div>
     </div>

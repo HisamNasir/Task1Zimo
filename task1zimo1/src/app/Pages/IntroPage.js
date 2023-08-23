@@ -4,51 +4,16 @@ import Image from "next/image";
 import { useClient } from "next/client";
 import { motion, iseInView, useAnimation } from "framer-motion";
 import { useEffect, useState } from 'react';
+import FadeInOutComponent from "../Assets/FadeInOutComponent";
 
-const FadeInSection = ({ children }) => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const element = document.getElementById('fade-in-section');
-      const elementOffset = element.offsetTop;
-      const windowHeight = window.innerHeight;
-      const elementHeight = element.clientHeight;
-
-      const visibleRatio = (windowHeight - (elementOffset - scrollTop)) / elementHeight;
-
-      if (visibleRatio >= 0.8) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return (
-    <div
-      id="fade-in-section"
-      className={`transition-opacity duration-1000 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
-    >
-      {children}
-    </div>
-  );
-};
 
 const IntroPage = () => {
   return (
     <div id="Page" className="">
       <div id="Section1" className="relative">
         <div className="flex items-center h-screen ">
-          <FadeInSection  className=" z-0">
+          <FadeInOutComponent>
+                      <div  className=" z-0">
             <div
               id="logo"
               className="absolute inset-0 flex justify-center items-center opacity-25 blur-md"
@@ -95,9 +60,11 @@ const IntroPage = () => {
                 </g>
               </svg>
             </div >
-          </FadeInSection >
+          </div >
 
-            <FadeInSection>
+          </FadeInOutComponent>
+
+            <FadeInOutComponent>
 
           <div className=" m-10 z-10">
             <svg
@@ -177,7 +144,7 @@ const IntroPage = () => {
               </g>
             </svg>
           </div>
-            </FadeInSection>
+            </FadeInOutComponent>
           <div className=" h-screen flex justify-center items-end">
             <i className="absolute bottom-0 transform -translate-x-1/2 left-1/2 animate-bounce">
               <svg
