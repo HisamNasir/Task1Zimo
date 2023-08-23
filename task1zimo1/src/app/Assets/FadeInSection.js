@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import styles from './FadeInOnVisible.module.css'; // Import your CSS module
 
 const FadeInOnVisible = ({ children }) => {
   const targetRef = useRef(null);
@@ -14,9 +13,9 @@ const FadeInOnVisible = ({ children }) => {
     const handleIntersect = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add(styles.fadeIn); // Use styles.fadeIn from your CSS module
+          entry.target.classList.add('fade-in');
         } else {
-          entry.target.classList.remove(styles.fadeIn);
+          entry.target.classList.remove('fade-in');
         }
       });
     };
@@ -34,7 +33,7 @@ const FadeInOnVisible = ({ children }) => {
   }, []);
 
   return (
-    <div ref={targetRef} className={`transition-opacity duration-1000 ${styles.fadeIn}`}>
+    <div ref={targetRef} className="transition-opacity duration-1000 opacity-0">
       {children}
     </div>
   );

@@ -2,10 +2,7 @@
 'use client';
 import Image from "next/image";
 import { useClient } from "next/client";
-// import "../global.css"
 import { motion, iseInView, useAnimation } from "framer-motion";
-
-
 import { useEffect, useState } from 'react';
 
 const FadeInSection = ({ children }) => {
@@ -15,13 +12,13 @@ const FadeInSection = ({ children }) => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const element = document.getElementById('fade-in-section');
+      const elementOffset = element.offsetTop;
       const windowHeight = window.innerHeight;
       const elementHeight = element.clientHeight;
-      const elementOffset = element.offsetTop;
 
-      const visiblePercentage = (windowHeight - Math.max(0, elementOffset - scrollTop)) / elementHeight;
+      const visibleRatio = (windowHeight - (elementOffset - scrollTop)) / elementHeight;
 
-      if (visiblePercentage >= 0.8) {
+      if (visibleRatio >= 0.8) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -45,7 +42,6 @@ const FadeInSection = ({ children }) => {
     </div>
   );
 };
-
 
 const IntroPage = () => {
   return (
