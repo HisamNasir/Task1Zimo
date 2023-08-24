@@ -14,7 +14,7 @@ const Section12 = () => {
 .
       </div>
       <FadeInOutComponent>
-        <div className="flex items-center row-span-8 justify-center">
+        <div className="flex items-center row-span-8 lg:translate-y-20 justify-center">
                 <div className="flex  justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -98,46 +98,23 @@ const Section12 = () => {
       </div>
       </FadeInOutComponent>
       <FadeInOutComponent>
-      <div className="flex text-3xl row-span-2 justify-center items-center text-center">
+      <h1 className="flex text-2xl row-span-2 text-[#737373] justify-center items-center lg:translate-y-32 text-center">
           Document-signing software technology that lets you sign documents
           online.
-        </div>
+        </h1>
         </FadeInOutComponent>
 <div className="row-span-1 h-full">
-  <div className="grid  lg:grid-cols-3 h-full">
-  <div></div>
+  <div className=" h-full flex justify-end items-end">
 
-<div className=" flex w-full justify-center items-end animate-bounce">
-          <i  className="flex justify-center items-end">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20%"
-              height="20%"
-              viewBox="0 0 82.828 42.414"
-            >
-              <path
-                id="Path_59"
-                data-name="Path 59"
-                d="M74.805,456.151l40-40-40-40"
-                transform="translate(457.565 -73.391) rotate(90)"
-                fill="none"
-                stroke="#000"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-              />
-            </svg>
-          </i>
-        </div>
               {/* Signature Area  */}
         <div
           id="Signature_area"
-          className="relative flex items-end justify-center lg:justify-end mb-5 mr-5"
+          className="relative flex  justify-center lg:justify-end mb-5 mr-5"
         >
           <div>
-            <div className=" hover:opacity-0 flex items-end justify-end ">
+            <div className=" flex items-end justify-end ">
               <div className="flex gap-x-5">
-                <div className="">
+                <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="47.121"
@@ -155,7 +132,7 @@ const Section12 = () => {
                         d="M74.805,421.151l22.5-22.5-22.5-22.5"
                         transform="translate(1840.651 926.695) rotate(90)"
                         fill="none"
-                        stroke="#000"
+                        stroke="#737373"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth="1.5"
@@ -252,11 +229,11 @@ const Section12 = () => {
             </div>
             <div id="SignatureArea" className="">
               <div className="flex justify-end">
-                <hr className="w-80  h-0.5  bg-[#999999] opacity-50 border-0 rounded " />
+                <hr className="w-80  h-0.5  bg-[#afafaf] opacity-50 border-0 rounded " />
               </div>
-              <a  className="flex justify-end text-xs ">
+              <h1  className="flex justify-end text-xs ">
                 ZD:SID 46791269900490374129
-              </a>
+              </h1>
             </div>
 
         </div>

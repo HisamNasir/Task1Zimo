@@ -12,7 +12,7 @@ const Section2 = () => {
       >
         
           <div>
-            <p className="  m-5">REVOLUTIONARY</p>
+            <p className=" lg:text-2xl m-5">REVOLUTIONARY</p>
             <div className="grid max-lg:grid-rows-3 lg:grid-cols-3 gap-2">
               <div id="logo" className=" flex items-center justify-center">
                 <PopUp>
@@ -83,7 +83,7 @@ const Section2 = () => {
 
               </div>
               <div className="flex justify-center items-center align-middle">
-                <FadeInOutComponent><hr className="w-48 lg:w-1 h-1 lg:h-48 mx-4 lg:my-4 bg-[#BE9F56] border-0 mx-10 md:my-10" /></FadeInOutComponent>
+                <FadeInOutComponent><hr className="w-64 lg:w-[1px] h-[1px] lg:h-64 lg:my-4 bg-[#BE9F56] border-0 mx-10 md:my-10" /></FadeInOutComponent>
                 
               </div>
 
@@ -194,7 +194,7 @@ const Section2 = () => {
               </div>
             </div>
             <FadeInOutComponent>
-              <p className=" text-xl m-5">
+              <p className=" text-2xl m-5">
                 The only platform of it's kind in the world.
               </p>
             </FadeInOutComponent>

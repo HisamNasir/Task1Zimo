@@ -91,46 +91,53 @@ const Section3 = () => {
               </svg>
             </div>
           </div>
-          <div className=" w-full h-full ">
-            <div className="m-20 grid  grid-cols-6 z-10 text-white text-center ">
-              <div className="py-14">FINANCE</div>
-              <div className=" pl-20"></div>
-              <div className="flex justify-center  py-14">LEGAL</div>
-              <div className=" "></div>
-              <div className="flex justify-center py-14">JETS</div>
-              <div className="flex justify-center  py-14"></div>
-              <div className="flex justify-center py-14">PLATFORM</div>
-              <div className="flex justify-center py-14"></div>
-              <div className="flex justify-center  py-14">DATA</div>
-              <div className="flex justify-center">REAL ESTATE</div>
-              <div className="flex justify-center py-14"></div>
-              <div className="flex justify-center  py-14"></div>
-              <div className="flex justify-center py-14"></div>
-              <div className="flex justify-center py-14">CLOUD</div>
-              <div className="flex justify-center  py-14"></div>
-              <div className="flex justify-center py-14"></div>
-              <div className="flex justify-center py-14">CARS</div>
-              <div className="flex justify-center  py-14"></div>
-              <div className="flex justify-center py-14"></div>
-              <div className="flex justify-center py-14">TRAVEL</div>
-              <div className="flex justify-center ">YACHTS</div>
-              <div className="flex justify-center py-14"></div>
-              <div className="flex justify-center py-14"></div>
-              <div className="flex justify-center  ">
-                CRYPTOCURRENCY EXCHANGE
-              </div>
-              <div className="flex justify-center py-14"></div>
-              <div className="flex justify-center py-14"></div>
-              <div className="flex justify-center  py-14">WATCHES</div>
-              <div className="flex justify-center py-14"></div>
-              <div className="flex justify-center py-14">PRIVATE ISLANDS</div>
-              <div className="flex justify-center  py-14"></div>
-              <div className="flex justify-center py-14"></div>
-              <div className="flex justify-center py-14"></div>
-              <div className="flex justify-center  py-14"></div>
-              <div className="flex justify-center py-14">DIAMONDS</div>
-              <div className="flex justify-center py-14"></div>
+          <div className=" w-full h-full lg:text-xl ">
+
+
+            <div className="m-20 grid h-full  grid-cols-6 z-10 text-[#737373] text-center ">
+              <h1 className="flex justify-center items-center">FINANCE</h1>
+              <h1 className=""></h1>
+              <h1 className="flex justify-center  ">LEGAL</h1>
+              <h1 className=" "></h1>
+              <h1 className="flex justify-center"></h1>
+              <h1 className="flex items-end transla">JETS</h1>
+              <h1 className="flex justify-center "></h1>
+              <h1 className="flex justify-end items-center ">PLATFORM</h1>
+              <h1 className="flex justify-center  "></h1>
+              <h1 className="flex items-center justify-end">DATA</h1>
+              <h1 className="flex justify-center "></h1>
+              <h1 className="flex justify-end items-center">CLOUD</h1>
+              <h1 className="flex justify-center ">REAL ESTATE</h1>
+              <h1 className="flex justify-center "></h1>
+              <h1 className="flex justify-center  "></h1>
+              <h1 className="flex items-end ">CARS</h1>
+              <h1 className="flex justify-center "></h1>
+              <h1 className="flex   ">TRAVEL</h1>
+              <h1 className="flex justify-center "></h1>
+              <h1 className="flex justify-center items-center ">YACHTS</h1>
+              <h1 className="flex justify-center "></h1>
+              <h1 className="flex justify-center "></h1>
+              <h1 className="flex justify-center col-span-2">CRYPTOCURRENCY EXCHANGE</h1>
+
+              <h1 className="flex justify-center ">PRIVATE ISLANDS</h1>
+              <h1 className="flex justify-center "></h1>
+              <h1 className="flex justify-center  ">WATCHES</h1>
+              <h1 className="flex justify-end items-end -translate-y-10 ">DIAMONDS</h1>
+              <h1 className="flex justify-center "></h1>
+              <h1 className="flex justify-center  "></h1>
+              <h1 className="flex justify-center "></h1>
+
+
             </div>
+
+
+
+
+
+
+
+
+
           </div>
         </div>
       </div>

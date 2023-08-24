@@ -7,17 +7,14 @@ import { useEffect, useState } from 'react';
 const Section17 = () => {
   return (
     <div>
-      <div
-        id="Section20"
-        className="h-screen text-2xl relative flex items-center justify-center bg-black text-white"
-      ><FadeInOutComponent>
+      <div className="flex items-center justify-center h-screen relative bg-black text-white">
+      <FadeInOutComponent>
         <div className="z-0">
           <div
             id="logo"
-            className="absolute inset-0 flex justify-center items-center opacity-25 blur-md"
-          >
+            className="absolute inset-0 flex justify-center items-center opacity-25 blur-md">
             
-                          <svg
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1109.36"
               height="271.394"
@@ -61,14 +58,21 @@ const Section17 = () => {
             
 
           </div>
-        </div></FadeInOutComponent>
+        </div>
+        </FadeInOutComponent>
 
-        <div className="relative">
-         <PopUp><h1>INTERESTED IN WORKING WITH US? </h1></PopUp> 
-         <PopUp><h1 className="flex justify-center mt-40 cursor-pointer">Email </h1></PopUp> 
-
+      <div id="Section20" className=" text-2xl h-screen" >
+        <div className="flex h-1/2 justify-center items-end">
+         <PopUp><h1 className="">INTERESTED IN WORKING WITH US? </h1></PopUp> 
+        </div>
+        <div className="flex h-1/2 justify-center -translate-y-60 items-end">
+        <PopUp><h1 className="flex">Email </h1></PopUp> 
+        </div>
         </div>
       </div>
+      
+      
+
     </div>
   );
 };

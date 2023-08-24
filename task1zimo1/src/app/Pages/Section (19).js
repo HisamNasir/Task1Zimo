@@ -63,10 +63,10 @@ const Section18 = () => {
             </svg>
           </div>
           <div className="flex justify-center m-10">
-            <div className="grid grid-cols-3 gap-x-5 text-center max-lg:text-xs">
-              <div>TERMS OF SERVICE</div>
-              <div>© ZIMO GROUP 2023</div>
-              <div>PRIVACY POLICY</div>
+            <div className="grid grid-cols-3 gap-x-5 text-center text-xs">
+              <h1>TERMS OF SERVICE</h1>
+              <h1>© ZIMO GROUP 2023</h1>
+              <h1>PRIVACY POLICY</h1>
             </div>
           </div>
         </PopUp>
