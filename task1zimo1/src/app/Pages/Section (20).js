@@ -3,10 +3,10 @@ import React from "react";
 const Section19 = () => {
   return (
     <div>
-      <div id="Section1" className="relative h-screen">
+      <div id="Section1" className="relative h-screen  text-xs">
         <div className=" h-full p-10">
           <div className="flex ">
-          <div className="text-xs">
+          <div className="">
             <p className="">ENQUIRIES</p>
             <p>hello@zimogroup.org</p>
           </div>
@@ -15,10 +15,10 @@ const Section19 = () => {
           </p>
           </div>
 
-          <div className="flex h-full items-center">
-          <div className="lg:grid  w-full lg:grid-cols-2">
+          <div className="flex h-full justify-center items-center">
+          <div className="lg:grid w-full h-full p-5 lg:grid-cols-2">
             <div>
-                          <div className="z-10 h-full flex items-center text-center">
+            <div className="z-10 h-full flex items-center  text-center">
               <div>
               <svg
                 className="mx-10"
@@ -205,54 +205,64 @@ const Section19 = () => {
             </div>
             
             </div>
-            <div >
-                          <div className="grid grid-cols-2">
+            <div id="grids" >
+                <div className="grid grid-cols-2 h-full ">
+                <div className="flex justify-end items-center h-full">
                 <div>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
+                  <dl className="m-2">REAL ESATE</dl>
+                  <dl className="m-2">realestate@zimogroup.org</dl>
+                  <dl className="m-2">CARS</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">YACHTS</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">WATCHES</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">JET</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">PRIVATE ISLANDS</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">DIAMONDS</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">TRAVEL THE WORLD</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
                 </div>
-                <div className="grid grid-row-2">
+                </div>
+                <div className="flex justify-end">
+                  <div className="grid grid-row-2">
                   <div className="my-5">
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
+                  
+                  <dl className="m-2">ADVERTISING</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">SPONSORSHIP</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">PARTNERS</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">LEGAL</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">CORPORATE</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">MARKEETING</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
                   </div>
                   <div className="my-5">
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
-                  <li>xyz</li>
+                  <dt>UNITED KINGDOM</dt>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">EUROPE</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">NORTH AMERICA</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">MIDDLE EAST</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">ASIA/AUSTRALIA</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">AFRICA</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">CHINA/HONG KONG</dl>
+                  <dl className="m-2">@zimogroup.org</dl>
                   </div>
                 </div>
+                </div>
+                
             </div>
             </div>
 
@@ -262,9 +272,9 @@ const Section19 = () => {
           </div>
 
             <div className=" lg:flex lg:items-end">
-            <i className="absolute   text-xs">
+            <i className="absolute p-5 text-xs">
               <p>
-                ZIMO is a wholly owned subsidiary company of ZIMO GROUP LIMITED.
+                ZIMO is a wholly owned subsidiary company of ZIMO GROUP dlMITED.
                 <br />
                 The registered office is: 71-75 Shelton Street, Covent Garden,
                 London, WC2H 9JQ, England, United Kingdom.
