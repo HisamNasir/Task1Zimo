@@ -84,7 +84,6 @@ const Section2 = () => {
               </div>
               <div className="flex justify-center items-center align-middle">
                 <FadeInOutComponent><hr className="w-64 lg:w-[1px] h-[1px] lg:h-64 lg:my-4 bg-[#BE9F56] border-0 mx-10 md:my-10" /></FadeInOutComponent>
-                
               </div>
 
               <div id="logo2" className=" flex items-center justify-center">

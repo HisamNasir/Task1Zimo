@@ -21,6 +21,9 @@ import Section16 from "./Pages/Section (17).js";
 import Section17 from "./Pages/Section (18).js";
 import Section18 from "./Pages/Section (19).js";
 import Section19 from "./Pages/Section (20).js";
+import Section182 from "./Pages/Section (182).js";
+import Section183 from "./Pages/Section (183).js";
+
 
 // import se
 import Head from "next/head.js";
@@ -52,6 +55,8 @@ export default function Home() {
       <Section16 />
       <Section17 />
       <Section18 />
+      <Section182 />
+      <Section183 />
       <Section19 />
     </>
   );

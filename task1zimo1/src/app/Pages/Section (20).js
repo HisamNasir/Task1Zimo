@@ -139,7 +139,8 @@ const Section19 = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="flex text-center m-2 text-xs">
+                    <p className="flex justify-center text-center m-2 text-xs">ZIMO GROUP LIMITED</p>
+                    <p className="flex text-center m-2 justify-center text-xs">
                       71 - 75 SHELTON STREET COVENT GARDEN LONDON WC2H 9JQ
                       ENGLAND UNITED KINGDOM
                     </p>
@@ -212,19 +213,19 @@ const Section19 = () => {
                   <dl className="m-2">REAL ESATE</dl>
                   <dl className="m-2">realestate@zimogroup.org</dl>
                   <dl className="m-2">CARS</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">cars@zimogroup.org</dl>
                   <dl className="m-2">YACHTS</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">yachts@zimogroup.org</dl>
                   <dl className="m-2">WATCHES</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">watches@zimogroup.org</dl>
                   <dl className="m-2">JET</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">jet@zimogroup.org</dl>
                   <dl className="m-2">PRIVATE ISLANDS</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">perivateislands@zimogroup.org</dl>
                   <dl className="m-2">DIAMONDS</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">diamonds@zimogroup.org</dl>
                   <dl className="m-2">TRAVEL THE WORLD</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">ttw@zimogroup.org</dl>
                 </div>
                 </div>
                 <div className="flex justify-end">
@@ -232,33 +233,33 @@ const Section19 = () => {
                   <div className="my-5">
                   
                   <dl className="m-2">ADVERTISING</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">advertising@zimogroup.org</dl>
                   <dl className="m-2">SPONSORSHIP</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">sponsorship@zimogroup.org</dl>
                   <dl className="m-2">PARTNERS</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">partners@zimogroup.org</dl>
                   <dl className="m-2">LEGAL</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">legal@zimogroup.org</dl>
                   <dl className="m-2">CORPORATE</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">corporate@zimogroup.org</dl>
                   <dl className="m-2">MARKEETING</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">markeeting@zimogroup.org</dl>
                   </div>
                   <div className="my-5">
                   <dt>UNITED KINGDOM</dt>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">press-uk@zimogroup.org</dl>
                   <dl className="m-2">EUROPE</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">press-eu@zimogroup.org</dl>
                   <dl className="m-2">NORTH AMERICA</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">press-na@zimogroup.org</dl>
                   <dl className="m-2">MIDDLE EAST</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">press-me@zimogroup.org</dl>
                   <dl className="m-2">ASIA/AUSTRALIA</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">press-apac@zimogroup.org</dl>
                   <dl className="m-2">AFRICA</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">press-af@zimogroup.org</dl>
                   <dl className="m-2">CHINA/HONG KONG</dl>
-                  <dl className="m-2">@zimogroup.org</dl>
+                  <dl className="m-2">press-ch@zimogroup.org</dl>
                   </div>
                 </div>
                 </div>
@@ -273,7 +274,7 @@ const Section19 = () => {
 
             <div className=" lg:flex lg:items-end">
             <i className="absolute p-5 text-xs">
-              <p>
+              <p className="">
                 ZIMO is a wholly owned subsidiary company of ZIMO GROUP dlMITED.
                 <br />
                 The registered office is: 71-75 Shelton Street, Covent Garden,
