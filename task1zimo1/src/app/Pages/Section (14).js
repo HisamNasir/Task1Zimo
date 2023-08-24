@@ -1,6 +1,5 @@
 import React from "react";
-
-import SlidingDiv from "../Assets/SlidingDiv";
+import FadeInOutComponent from "../Assets/FadeInOutComponent";
 import { useEffect, useState } from 'react';
 
 
@@ -9,10 +8,12 @@ const Section13 = () => {
     <div>
       <div id="Section16" className=" bg-black text-white w-full">
         <div className=" h-screen flex justify-center items-center text-center">
-          
-          <h1>
+          <FadeInOutComponent>
+                      <h1>
             A REAL ESTATE AND PROPERTY PLATFORM THAT WILL CHANGE THE WORLD.
           </h1>
+          </FadeInOutComponent>
+
           
           <div className="absolute invert h-screen flex justify-center items-end">
           <i className="flex justify-center  bottom-0 transform -translate-x-1/2 left-1/2 animate-bounce">

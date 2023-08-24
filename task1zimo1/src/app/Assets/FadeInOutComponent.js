@@ -28,7 +28,7 @@ const FadeInOutComponent = ({ children }) => {
   return (
     <div
       ref={containerRef}
-      className={`transition-opacity duration-500 ease-in-out ${
+      className={`transition-opacity duration-1000 ease-in-out ${
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
     >

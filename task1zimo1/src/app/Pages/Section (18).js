@@ -1,5 +1,6 @@
 import React from "react";
-
+import FadeInOutComponent from "../Assets/FadeInOutComponent";
+import PopUp from "../Assets/PopUp";
 import { useEffect, useState } from 'react';
 
 
@@ -9,13 +10,14 @@ const Section17 = () => {
       <div
         id="Section20"
         className="h-screen text-2xl relative flex items-center justify-center bg-black text-white"
-      >
-        <div className="  z-0">
+      ><FadeInOutComponent>
+        <div className="z-0">
           <div
             id="logo"
             className="absolute inset-0 flex justify-center items-center opacity-25 blur-md"
           >
-            <svg
+            
+                          <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1109.36"
               height="271.394"
@@ -56,12 +58,14 @@ const Section17 = () => {
                 />
               </g>
             </svg>
+            
+
           </div>
-        </div>
+        </div></FadeInOutComponent>
 
         <div className="relative">
-          <h1>INTERESTED IN WORKING WITH US? </h1>
-          <h1 className="flex justify-center mt-40 cursor-pointer">Email </h1>
+         <PopUp><h1>INTERESTED IN WORKING WITH US? </h1></PopUp> 
+         <PopUp><h1 className="flex justify-center mt-40 cursor-pointer">Email </h1></PopUp> 
 
         </div>
       </div>

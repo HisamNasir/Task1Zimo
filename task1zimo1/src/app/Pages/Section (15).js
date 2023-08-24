@@ -1,5 +1,5 @@
 import React from "react";
-
+import FadeInOutComponent from "../Assets/FadeInOutComponent";
 import { useEffect, useState } from 'react';
 
 
@@ -8,8 +8,9 @@ import { useEffect, useState } from 'react';
 const Section14 = () => {
   return (
     <div>
-      <div id="section" className="relative ">
-        <div
+      <div id="section" className="relative">
+        
+                  <div
           id="logo"
           className="absolute inset-0 flex justify-center items-center opacity-25 blur-md"
         >
@@ -55,8 +56,10 @@ const Section14 = () => {
             </g>
           </svg>
         </div>
+        
+
         <div className=" h-screen flex justify-center items-center text-center">
-          <h1>Bringing the world closer together.</h1>
+          <FadeInOutComponent><h1>Bringing the world closer together.</h1></FadeInOutComponent>
           <div className="absolute  h-screen flex justify-center items-end">
           <i className="flex justify-center  bottom-0 transform -translate-x-1/2 left-1/2 animate-bounce">
             <svg

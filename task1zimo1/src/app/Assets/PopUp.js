@@ -29,7 +29,7 @@ const PopUp = ({ children }) => {
   return (
     <div
       ref={targetRef}
-      className={`transition-transform duration-500 ${
+      className={`transition-transform duration-1000 ${
         isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
       }`}
     >

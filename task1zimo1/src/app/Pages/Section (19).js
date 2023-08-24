@@ -1,11 +1,12 @@
 import React from "react";
+import PopUp from "../Assets/PopUp";
 
 const Section18 = () => {
   return (
     <div>
       <div id="Section18" className=" h-screen  bg-[#AEAEAE]">
         <div className="flex h-5/6 justify-center items-center">
-          <div className="">
+          <PopUp>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="357.609"
@@ -19,9 +20,9 @@ const Section18 = () => {
                 transform="translate(146.183 57.348)"
               />
             </svg>
-          </div>
+          </PopUp>
         </div>
-        <div>
+        <PopUp>
           <div className=" flex justify-center ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +69,7 @@ const Section18 = () => {
               <div>PRIVACY POLICY</div>
             </div>
           </div>
-        </div>
+        </PopUp>
       </div>
     </div>
   );

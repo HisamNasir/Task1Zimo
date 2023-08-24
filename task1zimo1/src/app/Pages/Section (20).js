@@ -3,12 +3,12 @@ import React from "react";
 const Section19 = () => {
   return (
     <div>
-      <div id="Section1" className="relative">
-        <div className=" h-screen ">
+      <div id="Section1" className="relative h-screen">
+        <div className=" h-screen m-10">
           <div>
             <div
               id="logo"
-              className="absolute inset-0 flex justify-center items-center opacity-25 blur-md"
+              className="absolute z-0 inset-0 flex justify-center items-center opacity-25 blur-md"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,8 +61,9 @@ const Section19 = () => {
             <p>hello@zimogroup.org</p>
           </div>
 
-          <div className="mx-10 z-10 h-full flex items-center justify-center text-center">
-            <div>
+          <div className="lg:grid lg:grid-cols-2">
+            <div className="mx-10 z-10 h-full flex items-center text-center">
+              <div>
               <svg
                 className="mx-10"
                 xmlns="http://www.w3.org/2000/svg"
@@ -244,11 +245,58 @@ const Section19 = () => {
                   </div>
                 </div>
               </div>
+              </div>
             </div>
-          </div>
-
-          <div className=" flex items-end">
-            <i className="absolute  m-10 text-xs">
+            <div className="lg:grid lg:grid-cols-2">
+                <div>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                </div>
+                <div className="grid grid-row-2">
+                  <div>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  </div>
+                  <div>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  <li>xyz</li>
+                  </div>
+                </div>
+            </div>
+            <div className="m-10  lg:flex lg:items-end">
+            <i className="absolute   text-xs">
               <p>
                 ZIMO is a wholly owned subsidiary company of ZIMO GROUP LIMITED.
                 <br />
@@ -257,7 +305,11 @@ const Section19 = () => {
               </p>
             </i>
           </div>
+          </div>
+
+
         </div>
+
       </div>
     </div>
   );

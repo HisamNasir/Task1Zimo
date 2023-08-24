@@ -1,13 +1,13 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-// import { useState, useEffect, useRef } from "react";
-// import '../global.css'
+
 import PhoneG1 from "../Assets/IPhone 14 (14).png";
 import PhoneG2 from "../Assets/IPhone 14 (19).png";
 import Phone2G1 from "../Assets/Pixel 7 Pro Mockup.png";
 import Phone2G2 from "../Assets/Pixel 7 Pro Mockup-7.png";
-// import FadeInSection from "../Assets/FadeInSection.jsx";
+import PopUp from "../Assets/PopUp";
+import FadeInOutComponent from "../Assets/FadeInOutComponent";
 
 import { useEffect, useState } from 'react';
 
@@ -24,18 +24,20 @@ const Section16 = () => {
         
         <div className=" h-full">
           <div className="grid grid-row-5 h-full">
-            
-             <div className="lg:hidden h-80 m-10">
+            <FadeInOutComponent>
+                           <div className="lg:hidden h-80 m-10">
                   <div className="flex justify-center -translate-x-20 h-80 relative z-30">
                       <Image className="30 w-40 max-h-80 absolute z-40" src={PhoneG1} alt=""></Image>
                       <Image className="20 w-40 translate-x-32 max-h-80 absolute z-30" src={PhoneG2} alt=""></Image>
                   </div>
-              </div>  
+              </div> 
+            </FadeInOutComponent>
+ 
 
    
             <div className="flex justify-center m-10">
-              
-              <svg
+              <FadeInOutComponent>
+                              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100"
                 height="100"
@@ -116,16 +118,24 @@ const Section16 = () => {
                   </g>
                 </g>
               </svg>
+
+
+              </FadeInOutComponent>
+
             </div>
+            <FadeInOutComponent>
             <div className="m-10">
               <h1 className="flex justify-center text-5xl font-extralight m-5">
                 DOWNLOAD
               </h1>
               <p className="flex justify-center">OUR APP</p>
             </div>
+            </FadeInOutComponent>
+
             <div className="m-10">
               <div className="flex justify-center">
-                <svg
+            <PopUp>
+            <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="135"
                   height="105.126"
@@ -421,11 +431,15 @@ const Section16 = () => {
                     </g>
                   </g>
                 </svg>
+            </PopUp>
               </div>
             </div>
-            <p className="flex justify-center text-[#BE9F56] ">
+            <FadeInOutComponent>
+                          <p className="flex justify-center text-[#BE9F56] ">
               Get the ZIMO app on a phone or tablet
             </p>
+            </FadeInOutComponent>
+
 
 
 
@@ -435,7 +449,7 @@ const Section16 = () => {
             </p>
 
 
-            <div>
+            <FadeInOutComponent>
               
             <div className="lg:hidden h-80 m-10">
                   <div className="flex justify-center -translate-x-20 h-80 relative z-30">
@@ -444,18 +458,22 @@ const Section16 = () => {
                   </div>
               </div>  
 
-            </div>
+            </FadeInOutComponent>
 
 
 
           </div>
-          
-          <p className="flex justify-center opacity-50  text-center">
+          <FadeInOutComponent>
+                      <p className="flex justify-center opacity-50  text-center">
               ZIMO is available on many devices. The ZIMO app may come
               pre-installed or you may need to download and install it.
-            </p>        
+            </p>     
+          </FadeInOutComponent>
+          
+   
           <div className="mt-10 flex justify-center items-end">
           <i className="flex justify-center  bottom-0 transform -translate-x-1/2 left-1/2 animate-bounce">
+            
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20%"
